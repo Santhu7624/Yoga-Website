@@ -12,7 +12,7 @@ const classData = [
     title: "Morning Flow",
     image: classImg1,
   },
-   {
+  {
     type: "Online",
     day: "Wednesday",
     time: "8:00 AM – 9:00 AM",
@@ -25,7 +25,7 @@ const classData = [
     time: "6:00 PM – 7:00 PM",
     title: "Power Yoga",
     image: classImg2,
-  }, 
+  },
   {
     type: "In-Person",
     day: "Saturday",
@@ -51,9 +51,8 @@ export default function Schedule() {
         {["All", "Online", "In-Person"].map((f) => (
           <button
             key={f}
-            className={`px-4 py-2 rounded-md ${
-              filter === f ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800"
-            }`}
+            className={`px-4 py-2 rounded-md ${filter === f ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800"
+              }`}
             onClick={() => setFilter(f)}
           >
             {f}
@@ -118,18 +117,21 @@ export default function Schedule() {
               <strong>Type:</strong> {selectedClass.type}
             </p>
             <p className="mb-2">
-              <strong>Contact:</strong> +65 1234 5678  
+              <strong>Contact:</strong> +65 80819848
               <br />
               <strong>Email:</strong> yogawithme@example.com
             </p>
             <div className="mt-4">
               <iframe
-                title="Class Location"
-                className="w-full h-64 rounded-md"
-                src="https://www.google.com/maps/embed/v1/place?q=Bedok,+Singapore&key=YOUR_GOOGLE_MAPS_API_KEY"
+                title="Google Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7163280116584!2d103.9341825!3d1.379611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3d95a65c3fc1%3A0x3c60e65c8cdb36b4!2sWhiteWater!5e0!3m2!1sen!2ssg!4v1710000000000!5m2!1sen!2ssg"
+                width="100%"
+                height="400"
                 allowFullScreen
                 loading="lazy"
-              ></iframe>
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg shadow-md"
+              />
             </div>
           </div>
         </div>

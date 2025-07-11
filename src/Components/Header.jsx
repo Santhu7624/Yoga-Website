@@ -6,7 +6,8 @@ import logo from "../assets/images/logo.jpg";
 const navItems = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Classes", path: "/classes" },
+  { label: "Schedule", path: "/schedule" },
+  { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -18,7 +19,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
          {/* Logo and Title */}
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Yoga Logo" className="h-10 w-auto" />
+          <img src={logo} alt="Yoga Logo" className="h-10 w-auto rounded-full" />
           <span className="text-xl font-bold text-gray-800">Kanishka yoga Center</span>
         </Link>
         {/* <h1 className="text-xl font-bold">Kanishka yoga Center</h1> */}

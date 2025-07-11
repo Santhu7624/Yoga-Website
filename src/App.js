@@ -16,7 +16,7 @@ import yoga6 from "./assets/images/home6.jpg";
 import Gallery from './Components/Gallery';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const navItems = ["Home", "About", "Schedule", "Gallery", "Contact"];
+// const navItems = ["Home", "About", "Schedule", "Gallery", "Contact"];
   const images = [yoga1, yoga2, yoga3, yoga4, yoga5, yoga6];
 function App() {
   
@@ -58,7 +58,7 @@ function App() {
      
 
       {/* About */}
-      <section id="about" className="p-6 bg-white">
+      <section id="about" className="container mx-auto p-6 bg-white">
         {/* <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">About the Teacher</h2>
           <p className="text-gray-700">
